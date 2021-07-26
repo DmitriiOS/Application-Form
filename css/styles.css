@@ -1,0 +1,20 @@
+.display-block {
+    display: block;
+    padding-bottom: 10px;
+}
+
+#survey-form {
+    width: 900px;
+    margin: auto;
+    background-color: lemonchiffon;
+    padding: 20px;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.width {
+    width: 100%;
+}
+

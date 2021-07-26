@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Application Form</title>
+</head>
+<body>
+    <header class="text-centered">
+        <h1 id="title">Gardener's Application Form</h1>
+        <p id="description"><em>Please apply this form to get your personal discount in our shop</em></p>
+    </header>
+    <form id="survey-form">
+        <div class="display-block">
+            <label id="name-label">Name</label>
+            <input id="name" class="width" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="display-block">
+            <label id="email-label">Email</label>
+            <input id="email" class="width" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="display-block">
+            <label id="number-label">Age (optional)</label>
+            <input id="number" class="width" type="number" placeholder="Your age" min="1" max="100">
+        </div>
+        <div class="display-block">
+            <label>What do you like doing in the garden?</label>
+            <select id="dropdown" class="width" name="dropdown" id="speciality" required>
+                <option disabled selected value>Select your favourite activity</option>
+                <option value="flowers">Plant flowers</option>
+                <option value="Vegetables">Plant vegetables</option>
+                <option value="Trees">Cut trees</option>
+                <option value="Bugs">Kill bugs</option>
+                <option value="Harvest">Harvest crop</option>
+                <option value="Relax">Walk around and relax</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="display-block">
+            <label>Would you recommend our shop?</label>
+            <label><input name="user-recommend" value="Sure" type="radio" checked>Sure</label>
+            <label><input name="user-recommend" value="Yes" type="radio">Yes</label>
+            <label><input name="user-recommend" value="Not-sure" type="radio">Not sure</label>           
+        </div>
+        <div class="display-block">
+            <label>What is you favourite plant in the garden?</label>
+            <select class="width" name="dropdown" id="plants" required>
+                <option disabled selected value>Select your favourite plants</option>
+                <option value="flowers">Flowers</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Trees">Trees</option>
+                <option value="Bugs">Grass</option>
+                <option value="Harvest">Berries</option>
+                <option value="Relax">Exotic</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="display-block">
+            <label>What would you like to see improved in our shop?</label>
+            <label><input name="improve" value="customer-service" type="checkbox">Customer service</label>
+            <label><input name="improve" value="product-range" type="checkbox">Product range</label>
+            <label><input name="improve" value="discount-system" type="checkbox">Discount system</label>
+            <label><input name="improve" value="special-offers" type="checkbox">Special offers</label>
+            <label><input name="improve" value="advertisement" type="checkbox">Advertisement</label>
+        </div>
+        <div class="display-block">
+            <label>Any comments or suggestions?</label>
+            <textarea class="width" name="comment" id="comments" rows="10" placeholder="Enter your comment here"></textarea>
+        </div>
+        <div class="display-block">
+            <button id="submit" class="width" type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
